@@ -34,7 +34,6 @@ for question, options in questions.items():
     selected_values[question] = st.selectbox(question, options)
 
 if st.button("Predict"):
-    randomizer = random.randint(0)
     # Access selected values
     level = int(selected_values["What level are you?"])
     time_skills = int(selected_values["How would you describe your study habits and time management skills?"])
