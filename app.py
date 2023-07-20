@@ -29,7 +29,7 @@ model_mapping = {
 }
 selected_values = {}
 model = st.selectbox('Select the model:', ("Xgboost", "Logistic Regression", "Support vector Machine","Deep Neural Network"))
-multiplier = model_mapping[selected_model]
+multiplier = model_mapping[model]
 for question, options in questions.items():
     selected_values[question] = st.selectbox(question, options)
 
