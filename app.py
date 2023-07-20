@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import streamlit as st
 from collections import Counter
 
@@ -265,4 +265,4 @@ if st.button("Predict"):
     # Display pass/fail percentages
     st.write("Pass Percentage:", pass_percentage)
     st.write("Fail Percentage:", fail_percentage)
->>>>>>> 75514fc1f4d164455d72edb78e9398fce0308559
+
