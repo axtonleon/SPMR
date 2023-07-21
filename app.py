@@ -129,7 +129,9 @@ if st.button("Predict"):
     # Calculate pass/fail percentage
     result_counter = Counter(results)
     pass_percentage = (result_counter["Pass"] / len(results)) * 100
-    fail_percentage = (result_counter["Fail"] / len(results)) * 100
+    fail_percentage = 100 - pass_percentage
 
     # Display pass/fail percentages
     st.write("Pass Percentage:", pass_percentage*multiplier)
+    st.write("Fail Percentage:", fail_percentage)
+
