@@ -5,6 +5,11 @@ from collections import Counter
 st.title("STUDENT SUCCESS PREDICTOR")
 st.info("   :information_source: answer the below questions with 1 as poor and 5 as very good")
 questions = {
+    'Enter your age: ',
+    'Enter your mother\'s education level: ':("none", "primary education", "secondary education", "higher education"),
+    'How often do you fail?: ': ("1", "2", "3", "4", "5"),
+    'Enter your sex: ': ("Male", "Female"),
+    'How often do you study per day: ': ("1", "2", "3", "4", "5"),
     "What level are you?": ("100", "200", "300", "400", "500"),
     "How would you describe your study habits and time management skills?": ("1", "2", "3", "4", "5"),
     "Are you actively engaged in class discussions and participate in group activities?": ("1", "2", "3", "4", "5"),
