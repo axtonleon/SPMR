@@ -4,8 +4,8 @@ from collections import Counter
 
 st.title("STUDENT SUCCESS PREDICTOR")
 st.info("   :information_source: answer the below questions with 1 as poor and 5 as very good")
+
 questions = {
-    'Enter your age: ',
     'Enter your mother\'s education level: ':("none", "primary education", "secondary education", "higher education"),
     'How often do you fail?: ': ("1", "2", "3", "4", "5"),
     'Enter your sex: ': ("Male", "Female"),
@@ -35,6 +35,7 @@ model_mapping = {
 selected_values = {}
 model = st.selectbox('Select the model:', ("Xgboost", "Logistic Regression", "Support vector Machine","Deep Neural Network"))
 multiplier = model_mapping[model]
+st.text_input('Enter your age: ')
 for question, options in questions.items():
     selected_values[question] = st.selectbox(question, options)
 
