@@ -1,7 +1,11 @@
 
 import streamlit as st
 from collections import Counter
+from PIL import Image
 
+image = Image.open('image.jpg')
+
+st.image(image,)
 st.title("STUDENT SUCCESS PREDICTOR")
 st.info("   :information_source: answer the below questions with 1 as poor and 5 as very good")
 
